@@ -1,5 +1,5 @@
 # bat_script_function_1
-bat script function to get dir command  's file index number for parsing<br>
+bat script function to get dir command  's file index number for parsing file name<br>
 Once you get the index use it like this to get file name<br>
 `set filename=!str:~%index%,250!`<br>
 where str is the whole line of dir output<br>
