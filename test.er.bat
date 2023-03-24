@@ -1,5 +1,5 @@
 REM ======>
-REM start of code VARIABLE USED: randomer, tempfile, quot, str
+REM start of code VARIABLE USED: randomer, tempfile, quot, str, res, nuzr, num
 setlocal enabledelayedexpansion
 set /a randomer=%random%
 set tempfile=save%randomer%.temp.file%randomer%.conf.txt
@@ -11,10 +11,10 @@ for /f "skip=4 delims=" %%i in (%tempfile%) do for /f "tokens=*" %%a in ("%%i") 
 set NUM=%~1
 REM set /a start=NUM+1
 set str="%~2"
-echo !str!
-echo NUM NUM IS %~1
 for /l %%f in (!NUM!,1,250) do echo !str!&set res=!str:~%%f,1!&echo !res!&if "!res!"=="." echo %%f&(CALL :HERE %%f)
 :done
 :HERE
 set numzr=%~1
+set /a numzr=numzr-1
+echo !numzr!&PAUSE
 REM end Labels Used: Here There Done
