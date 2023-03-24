@@ -1,3 +1,5 @@
+REM ======>
+REM start of code VARIABLE USED: randomer, tempfile, quot, str
 setlocal enabledelayedexpansion
 set /a randomer=%random%
 set tempfile=save%randomer%.temp.file%randomer%.conf.txt
@@ -15,4 +17,4 @@ for /l %%f in (!NUM!,1,250) do echo !str!&set res=!str:~%%f,1!&echo !res!&if "!r
 :done
 :HERE
 set numzr=%~1
-PAUSE
+REM end Labels Used: Here There Done
